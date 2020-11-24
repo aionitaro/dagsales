@@ -24,6 +24,7 @@
                         {bidder: 'adform', params: { mid: 888094} },
                         {bidder: 'adform', params: { mid: 888095} },
                         {"bidder":"criteo","params":{"networkId":8796}},
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
                         {bidder: 'smartadserver', params:{domain:'https://prg.smartadserver.com', siteId:'385896', pageId:'1332499', formatId:'94890'}},
 
                     ]
@@ -40,6 +41,7 @@
                     bids: [
                         {bidder: 'adform', params: { mid: 888094} },
                         {bidder: 'adform', params: { mid: 888095} },
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
                         {"bidder":"criteo","params":{"networkId":8796}},
                         {bidder: 'smartadserver', params:{domain:'https://prg.smartadserver.com', siteId:'385896', pageId:'1332499', formatId:'94890'}}
                     ]
@@ -56,6 +58,7 @@
                     bids: [
                         {bidder: 'adform', params: { mid: 888095} },
                         {"bidder":"criteo","params":{"networkId":8796}},
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
                         {bidder: 'smartadserver', params:{domain:'https://prg.smartadserver.com', siteId:'385896', pageId:'1332499', formatId:'94890'}},
 
                     ]
@@ -72,6 +75,7 @@
                     bids: [
                         {bidder: 'adform', params: { mid: 888095} },
                         {"bidder":"criteo","params":{"networkId":8796}},
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
                         {bidder: 'smartadserver', params:{domain:'https://prg.smartadserver.com', siteId:'385896', pageId:'1332499', formatId:'94890'}}  
                     ]
                 },
@@ -87,6 +91,7 @@
                     bids: [
                         {bidder: 'adform', params: { mid: 888095} },
                         {"bidder":"criteo","params":{"networkId":8796}},
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
                         {bidder: 'smartadserver', params:{domain:'https://prg.smartadserver.com', siteId:'385896', pageId:'1332499', formatId:'94890'}}  
                     ]
                 }
