@@ -69,7 +69,7 @@
                     ]
                 },
                 {
-                    code: '/62727623/Antena3.ro-Content-Rectangle2',
+                    code: '/62727623/Antena3.ro-Content-Rectangle1',
                     mediaTypes: {
                         banner: {
                             sizeConfig: [
