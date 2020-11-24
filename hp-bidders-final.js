@@ -1,8 +1,5 @@
-<html>
-
-    <head>
-        <link rel="icon" type="image/png" href="/favicon.png">
-        <script async src="//www.googletagservices.com/tag/js/gpt.js"></script>
+<html>     
+       <script async src="//www.googletagservices.com/tag/js/gpt.js"></script>
         <script async src="//acdn.adnxs.com/prebid/not-for-prod/prebid.js"></script>
         <script>
         
@@ -130,3 +127,6 @@
             setTimeout(function() {
                 initAdserver();
             }, FAILSAFE_TIMEOUT);
+
+            </script>
+            </html>  
