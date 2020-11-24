@@ -1,6 +1,4 @@
 <html>     
-       <script async src="//www.googletagservices.com/tag/js/gpt.js"></script>
-        <script async src="//acdn.adnxs.com/prebid/not-for-prod/prebid.js"></script>
         <script>
         
             var PREBID_TIMEOUT = 1000;
@@ -95,6 +93,14 @@
 
             ];
 
+            var customPriceGranularity = {
+			'buckets': [
+				{'precision': 2,'min': 0,'max': 3,'increment': 0.01},
+				{'precision': 2,'min': 3,'max': 8,'increment': 0.05},
+				{'precision': 2,'min': 8,'max': 50,'increment': 0.5}
+			]
+	    };
+
             // ======== DO NOT EDIT BELOW THIS LINE =========== //
             var googletag = googletag || {};
             googletag.cmd = googletag.cmd || [];
@@ -107,6 +113,9 @@
 
             pbjs.que.push(function() {
                 pbjs.addAdUnits(adUnits);
+                pbjs.setConfig({
+                	priceGranularity: customPriceGranularity
+                });
                 pbjs.requestBids({
                     bidsBackHandler: initAdserver,
                     timeout: PREBID_TIMEOUT
@@ -129,4 +138,4 @@
             }, FAILSAFE_TIMEOUT);
 
             </script>
-            </html>  
+          
