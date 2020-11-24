@@ -41,6 +41,8 @@
                     bids: [
                         {bidder: 'adform', params: { mid: 888095} },
                         {bidder: 'teads',params: {pageId: '123671',placementId: '134424'}},
+                        {"bidder": "triplelift","params": {"inventoryCode": "ObservatorNews_Prbd_Mobile_Rectangle","floor": 0.1}},
+                        {"bidder": "triplelift","params": {"inventoryCode": "ObservatorNews_Prbd_Desktop_Rectangle","floor": 0.1}},
                         {"bidder":"criteo","params":{"networkId":8796}},
                         {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
                         {bidder: 'smartadserver', params:{domain:'https://prg.smartadserver.com', siteId:'385896', pageId:'1332499', formatId:'94890'}}
@@ -59,6 +61,8 @@
                         {bidder: 'adform', params: { mid: 888095} },
                         {"bidder":"criteo","params":{"networkId":8796}},
                         {bidder: 'teads',params: {pageId: '123671',placementId: '134424'}},
+                        {"bidder": "triplelift","params": {"inventoryCode": "ObservatorNews_Prbd_Mobile_Content","floor": 0.1}},
+                        {"bidder": "triplelift","params": {"inventoryCode": "ObservatorNews_Prbd_Desktop_Content","floor": 0.1}},
                         {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
                         {bidder: 'smartadserver', params:{domain:'https://prg.smartadserver.com', siteId:'385896', pageId:'1332499', formatId:'94890'}},
 
