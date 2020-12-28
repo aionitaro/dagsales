@@ -2,11 +2,7 @@
 <script async src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
 
 <script>
-var billboardsize  = googletag.sizeMapping()
-.addSize([980,0], ['fluid', [728, 90], [970, 250]])
-.addSize([415,0], ['fluid', [300, 250], [580, 400]])
-.addSize([0, 0], ['fluid', [300,250], [300, 600]])
-.build();
+
 
 
 
@@ -14,7 +10,11 @@ var billboardsize  = googletag.sizeMapping()
   googletag.cmd.push(function() {
 
 
-
+    var billboardsize  = googletag.sizeMapping()
+.addSize([980,0], ['fluid', [728, 90], [970, 250]])
+.addSize([415,0], ['fluid', [300, 250], [580, 400]])
+.addSize([0, 0], ['fluid', [300,250], [300, 600]])
+.build();
 
     googletag.defineSlot('/62727623/Catine.ro/HP/Billboard', [[970,250],[300,250],['fluid']], 'billboard').defineSizeMapping(billboardsize).addService(googletag.pubads());
     googletag.defineSlot('/62727623/Catine.ro/HP/Billboard1', [[970,250],[300,250],'fluid'], 'billboard1')
