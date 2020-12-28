@@ -7,8 +7,33 @@
 
 <script>
 
+            var PREBID_TIMEOUT = 1000;
+            var FAILSAFE_TIMEOUT = 3000;
 
-window.googletag = window.googletag || {cmd: []};
+            var adUnits = [
+                {
+                    code: 'billboard',
+                    mediaTypes: {
+                        banner: {
+                            sizeConfig: [
+                                { minViewPort: [0, 0], sizes: [[300, 250]] },
+                                { minViewPort: [980, 0], sizes: [[970,250],[728,90]] }
+                            ]
+                        }
+                    },
+                    bids: [
+                        {bidder: 'adform', params: { mid: xxxx} },
+                        {bidder: 'adform', params: { mid: xxxx} },
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                        {"bidder":"criteo","params":{"networkId":8796}},
+                        {bidder: 'smartadserver', params:{domain:'https://prg.smartadserver.com', siteId:'xxx', pageId:'xxxxx', formatId:'xxxxx'}},
+
+                    ]
+                },
+            ];
+
+
+  window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
 
 //cand e incarcat, defineste dimensiunile pentru responsibe
