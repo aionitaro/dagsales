@@ -3,13 +3,20 @@
 <script>
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
-    googletag.defineSlot('/62727623/Catine.ro/HP/Billboard', [[970,250],[300,250],'fluid'], 'div-gpt-ad-2082055-1')
+
+ var __dfp_mappingBillboard  = googletag.sizeMapping()
+    .addSize([980,0], ['fluid', [728, 90], [970, 250]])
+    .addSize([415,0], ['fluid', [300, 250], [580, 400]])
+    .addSize([0, 0], ['fluid', [300,250], [300, 600]])
+    .build();
+
+
+    googletag.defineSlot('/62727623/Catine.ro/HP/Billboard', [[970,250],[300,250],'fluid'], 'billboard').defineSizeMapping(__dfp_mappingBillboard).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/Catine.ro/HP/Billboard1', [[970,250],[300,250],'fluid'], 'billboard1')
              .addService(googletag.pubads());
-    googletag.defineSlot('/62727623/Catine.ro/HP/Billboard1', [[970,250],[300,250],'fluid'], 'div-gpt-ad-2082055-2')
+    googletag.defineSlot('/62727623/Catine.ro/HP/Rectangle', [[300,600],[300,250],'fluid'], 'rectangle')
              .addService(googletag.pubads());
-    googletag.defineSlot('/62727623/Catine.ro/HP/Rectangle', [[300,600],[300,250],'fluid'], 'div-gpt-ad-2082055-3')
-             .addService(googletag.pubads());
-    googletag.defineSlot('/62727623/Catine.ro/HP/Billboard2', [[300,600],[300,250]], 'div-gpt-ad-2082055-4')
+    googletag.defineSlot('/62727623/Catine.ro/HP/Billboard2', [[300,600],[300,250]], 'billboard2')
              .addService(googletag.pubads());
 
     googletag.pubads().enableSingleRequest();
@@ -23,33 +30,33 @@
 
 
 <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/HP/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
-<div id='div-gpt-ad-2082055-1'>
+<div id='billboard'>
     <script>
-      googletag.cmd.push(function() { googletag.display('div-gpt-ad-2082055-1'); });
+      googletag.cmd.push(function() { googletag.display('billboard'); });
     </script>
   </div>
   <!-- End AdSlot 1 -->
   
   <!-- GPT AdSlot 2 for Ad unit 'Catine.ro/HP/Billboard1' ### Size: [[970,250],[300,250],'fluid'] -->
-  <div id='div-gpt-ad-2082055-2'>
+  <div id='billboard1'>
     <script>
-      googletag.cmd.push(function() { googletag.display('div-gpt-ad-2082055-2'); });
+      googletag.cmd.push(function() { googletag.display('billboard1'); });
     </script>
   </div>
   <!-- End AdSlot 2 -->
   
   <!-- GPT AdSlot 3 for Ad unit 'Catine.ro/HP/Rectangle' ### Size: [[300,600],[300,250],'fluid'] -->
-  <div id='div-gpt-ad-2082055-3'>
+  <div id='rectangle'>
     <script>
-      googletag.cmd.push(function() { googletag.display('div-gpt-ad-2082055-3'); });
+      googletag.cmd.push(function() { googletag.display('rectangle'); });
     </script>
   </div>
   <!-- End AdSlot 3 -->
   
   <!-- GPT AdSlot 4 for Ad unit 'Catine.ro/HP/Billboard2' ### Size: [[300,600],[300,250]] -->
-  <div id='div-gpt-ad-2082055-4'>
+  <div id='billboard2'>
     <script>
-      googletag.cmd.push(function() { googletag.display('div-gpt-ad-2082055-4'); });
+      googletag.cmd.push(function() { googletag.display('billboard2'); });
     </script>
   </div>
   <!-- End AdSlot 4 -->
