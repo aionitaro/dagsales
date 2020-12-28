@@ -7,7 +7,7 @@
 
 <script>
 
-var PREBID_TIMEOUT = 1000;
+            var PREBID_TIMEOUT = 1000;
             var FAILSAFE_TIMEOUT = 3000;
 
             var adUnits = [
@@ -30,6 +30,53 @@ var PREBID_TIMEOUT = 1000;
 
                     ]
                 },
+            ];
+
+            
+            var customPriceGranularity = {
+			'buckets': [
+				{'precision': 2,'min': 0,'max': 3,'increment': 0.01},
+				{'precision': 2,'min': 3,'max': 8,'increment': 0.05},
+				{'precision': 2,'min': 8,'max': 50,'increment': 0.5}
+			]
+        };
+
+
+        var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+            googletag.cmd.push(function() {
+                googletag.pubads().disableInitialLoad();
+            });
+
+            var pbjs = pbjs || {};
+            pbjs.que = pbjs.que || [];
+
+            pbjs.que.push(function() {
+                pbjs.addAdUnits(adUnits);
+                pbjs.setConfig({
+                	priceGranularity: customPriceGranularity
+                });
+                pbjs.requestBids({
+                    bidsBackHandler: initAdserver,
+                    timeout: PREBID_TIMEOUT
+                });
+            });
+
+            function initAdserver() {
+                if (pbjs.initAdserverSet) return;
+                pbjs.initAdserverSet = true;
+                googletag.cmd.push(function() {
+                    pbjs.que.push(function() {
+                        pbjs.setTargetingForGPTAsync();
+                        googletag.pubads().refresh();
+                    });
+                });
+            }
+            
+            // in case PBJS doesn't load
+            setTimeout(function() {
+                initAdserver();
+            }, FAILSAFE_TIMEOUT);
 
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
