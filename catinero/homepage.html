@@ -10,19 +10,21 @@
   googletag.cmd.push(function() {
 
 
-    var billboardsize  = googletag.sizeMapping()
-.addSize([980,0], ['fluid', [728, 90], [970, 250]])
-.addSize([415,0], ['fluid', [300, 250], [580, 400]])
-.addSize([0, 0], ['fluid', [300,250], [300, 600]])
+var __dfp_mappingBillboard  = googletag.sizeMapping()
+.addSize([980,0], [[728, 90], [970, 250],[970, 90]])
+.addSize([0, 0], ['fluid', [300,250]])
 .build();
 
-    googletag.defineSlot('/62727623/Catine.ro/HP/Billboard', [[970,250],[300,250],['fluid']], 'billboard').defineSizeMapping(billboardsize).addService(googletag.pubads());
-    googletag.defineSlot('/62727623/Catine.ro/HP/Billboard1', [[970,250],[300,250],'fluid'], 'billboard1')
-             .addService(googletag.pubads());
-    googletag.defineSlot('/62727623/Catine.ro/HP/Rectangle', [[300,600],[300,250],'fluid'], 'rectangle')
-             .addService(googletag.pubads());
-    googletag.defineSlot('/62727623/Catine.ro/HP/Billboard2', [[300,600],[300,250]], 'billboard2')
-             .addService(googletag.pubads());
+var __dfp_mappingBillboard1  = googletag.sizeMapping()
+.addSize([980,0], [[728, 90], [970, 250],[970, 90]])
+.addSize([0, 0], ['fluid', [300,250],[300,600]])
+.build();
+
+
+    googletag.defineSlot('/62727623/Catine.ro/HP/Billboard', [[970,250],[300,250],['fluid']], 'billboard').defineSizeMapping(__dfp_mappingBillboard).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/Catine.ro/HP/Billboard1', [[970,250],[300,250],'fluid'], 'billboard1').defineSizeMapping(__dfp_mappingBillboard).addService(googletag.pubads());         
+    googletag.defineSlot('/62727623/Catine.ro/HP/Rectangle', [[300,600],[300,250],'fluid'], 'rectangle').addService(googletag.pubads());
+    googletag.defineSlot('/62727623/Catine.ro/HP/Billboard2', [[300,600],[300,250]], 'billboard2').defineSizeMapping(__dfp_mappingBillboard).addService(googletag.pubads());
 
     googletag.pubads().enableSingleRequest();
     googletag.pubads().collapseEmptyDivs();
@@ -69,4 +71,4 @@
   
 
 <br>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b9a859e0-8a92-475f-acd7-661cbdc83cd3/deploy-status)](https://app.netlify.com/sites/naughty-kalam-2473fe/deploys)
+<img src="https://api.netlify.com/api/v1/badges/b9a859e0-8a92-475f-acd7-661cbdc83cd3/deploy-status">
