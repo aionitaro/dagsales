@@ -4,14 +4,14 @@
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
 
- var __dfp_mappingBillboard  = googletag.sizeMapping()
+ let billboardsize  = googletag.sizeMapping()
     .addSize([980,0], ['fluid', [728, 90], [970, 250]])
     .addSize([415,0], ['fluid', [300, 250], [580, 400]])
     .addSize([0, 0], ['fluid', [300,250], [300, 600]])
     .build();
 
 
-    googletag.defineSlot('/62727623/Catine.ro/HP/Billboard', [[970,250],[300,250],['fluid']], 'billboard').defineSizeMapping(__dfp_mappingBillboard).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/Catine.ro/HP/Billboard', [[970,250],[300,250],['fluid']], 'billboard').defineSizeMapping(billboardsize).addService(googletag.pubads());
     googletag.defineSlot('/62727623/Catine.ro/HP/Billboard1', [[970,250],[300,250],'fluid'], 'billboard1')
              .addService(googletag.pubads());
     googletag.defineSlot('/62727623/Catine.ro/HP/Rectangle', [[300,600],[300,250],'fluid'], 'rectangle')
