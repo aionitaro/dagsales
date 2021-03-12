@@ -186,20 +186,20 @@ var __dfp_mappingBillboard  = googletag.sizeMapping()
 
 var __dfp_mappingRectangle  = googletag.sizeMapping()
 .addSize([980,0], [[336,280], [300,250], [375, 313]])
-.addSize([0, 0], ['fluid', [336,280], [300,250], [300,600]])
+.addSize([0, 0], ['fluid', [336,280], [300,250]])
 .build();
 
 var __dfp_mappingRelated  = googletag.sizeMapping()
 .addSize([980,0], ['fluid', [580, 400]])
-.addSize([0, 0], ['fluid', [300,250], [336,280], [300,600]])
+.addSize([0, 0], ['fluid', [300,250], [336,280]])
 .build();
 
 googletag.defineSlot('/62727623/financiarulro/Content/Billboard', [[970,250],[300,250],['fluid']], 'billboard').defineSizeMapping(__dfp_mappingBillboard).addService(googletag.pubads());
 googletag.defineSlot('/62727623/financiarulro/Content/Billboard1', [[300,250],['fluid']], 'billboard1').defineSizeMapping(__dfp_mappingRectangle).addService(googletag.pubads());
 googletag.defineSlot('/62727623/financiarulro/Content/Billboard2', [[300,250],['fluid']], 'billboard2').defineSizeMapping(__dfp_mappingRectangle).addService(googletag.pubads());
 googletag.defineSlot('/62727623/financiarulro/Content/Finart', [[300,250],['fluid']], 'finart').defineSizeMapping(__dfp_mappingRelated).addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Related', [[300,250],[300,600], ['fluid']], 'related').addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Related1', [[300,250],[300,600], ['fluid']], 'related1').addService(googletag.pubads());
+googletag.defineSlot('/62727623/financiarulro/Content/Related', [[300,250],[300,600], ['fluid']], 'related').defineSizeMapping(__dfp_mappingRelated).addService(googletag.pubads());
+googletag.defineSlot('/62727623/financiarulro/Content/Related1', [[300,250],[300,600], ['fluid']], 'related1').defineSizeMapping(__dfp_mappingRelated).addService(googletag.pubads());
 googletag.defineSlot('/62727623/financiarulro/Content/Sidebar', [[300,250],[300,600], ['fluid']], 'sidebar').addService(googletag.pubads());
 googletag.defineSlot('/62727623/financiarulro/Content/Sidebar2', [[300,250],[300,600], ['fluid']], 'sidebar1').addService(googletag.pubads());
 
