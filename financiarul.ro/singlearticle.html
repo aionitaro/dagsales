@@ -42,7 +42,7 @@ var PREBID_TIMEOUT = 1000;
                 },
 
                 {
-                    code: 'billboard1',
+                    code: 'inread1',
                     mediaTypes: {
                         banner: {
                             sizeConfig: [
@@ -58,23 +58,7 @@ var PREBID_TIMEOUT = 1000;
 
                     ]
                 },
-                {
-                    code: 'billboard2',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250]] }
-                            ]
-                        }
-                    },
-                    bids: [
-                        
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}},
-                       
-
-                    ]
-                },
+              
                 {
                     code: 'finart',
                     mediaTypes: {
@@ -150,7 +134,109 @@ var PREBID_TIMEOUT = 1000;
                     mediaTypes: {
                         banner: {
                             sizeConfig: [
+                                { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
+                            ]
+                        }
+                    },
+                    bids: [
+                        
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                        {"bidder":"criteo","params":{"networkId":8796}},
+                       
+
+                    ]
+                },
+                {
+                    code: 'sidebar2',
+                    mediaTypes: {
+                        banner: {
+                            sizeConfig: [
+                                { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
+                            ]
+                        }
+                    },
+                    bids: [
+                        
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                        {"bidder":"criteo","params":{"networkId":8796}},
+                       
+
+                    ]
+                },
+                {
+                    code: 'sidebar3',
+                    mediaTypes: {
+                        banner: {
+                            sizeConfig: [
+                                { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
+                            ]
+                        }
+                    },
+                    bids: [
+                        
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                        {"bidder":"criteo","params":{"networkId":8796}},
+                       
+
+                    ]
+                },
+                {
+                    code: 'sidebar2',
+                    mediaTypes: {
+                        banner: {
+                            sizeConfig: [
                                 { minViewPort: [0, 0], sizes: [[300, 250]] }
+                            ]
+                        }
+                    },
+                    bids: [
+                        
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                        {"bidder":"criteo","params":{"networkId":8796}},
+                       
+
+                    ]
+                },
+                {
+                    code: 'sidebar3',
+                    mediaTypes: {
+                        banner: {
+                            sizeConfig: [
+                                { minViewPort: [0, 0], sizes: [[300, 250]] }
+                            ]
+                        }
+                    },
+                    bids: [
+                        
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                        {"bidder":"criteo","params":{"networkId":8796}},
+                       
+
+                    ]
+                },
+                {
+                    code: 'sidebar4',
+                    mediaTypes: {
+                        banner: {
+                            sizeConfig: [
+                                { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
+                            ]
+                        }
+                    },
+                    bids: [
+                        
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                        {"bidder":"criteo","params":{"networkId":8796}},
+                       
+
+                    ]
+                }
+                {
+                    code: 'footer',
+                    mediaTypes: {
+                        banner: {
+                            sizeConfig: [
+                                { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
                             ]
                         }
                     },
@@ -234,13 +320,18 @@ var __dfp_mappingSidebar  = googletag.sizeMapping()
 .build();
 
 googletag.defineSlot('/62727623/financiarulro/Content/Billboard', [[970,250],[300,250],['fluid']], 'billboard').defineSizeMapping(__dfp_mappingBillboard).addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Billboard1', [[300,250],['fluid']], 'billboard1').defineSizeMapping(__dfp_mappingRectangle).addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Billboard2', [[300,250],['fluid']], 'billboard2').defineSizeMapping(__dfp_mappingRectangle).addService(googletag.pubads());
+googletag.defineSlot('/62727623/financiarulro/Content/Inread', [[300,250],['fluid']], 'inread').defineSizeMapping(__dfp_mappingRectangle).addService(googletag.pubads());
+googletag.defineSlot('/62727623/financiarulro/Content/Inread1', [[300,250],['fluid']], 'inread1').defineSizeMapping(__dfp_mappingRectangle).addService(googletag.pubads());
 googletag.defineSlot('/62727623/financiarulro/Content/Finart', [[300,250],['fluid']], 'finart').defineSizeMapping(__dfp_mappingRelated).addService(googletag.pubads());
 googletag.defineSlot('/62727623/financiarulro/Content/Related', [[300,250],[300,600], ['fluid']], 'related').defineSizeMapping(__dfp_mappingRelated).addService(googletag.pubads());
 googletag.defineSlot('/62727623/financiarulro/Content/Related1', [[300,250],[300,600], ['fluid']], 'related1').defineSizeMapping(__dfp_mappingRelated).addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Sidebar', [[300,250],[300,600], ['fluid']], 'sidebar').addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Sidebar2', [[300,250],[300,600], ['fluid']], 'sidebar1').addService(googletag.pubads());
+googletag.defineSlot('/62727623/financiarulro/Content/Sidebar', [[300,250], ['fluid']], 'sidebar').addService(googletag.pubads());
+googletag.defineSlot('/62727623/financiarulro/Content/Sidebar1', [[300,250],[300,600], ['fluid']], 'sidebar1').addService(googletag.pubads());
+googletag.defineSlot('/62727623/financiarulro/Content/Sidebar2', [[300,250], ['fluid']], 'sidebar2').addService(googletag.pubads());
+googletag.defineSlot('/62727623/financiarulro/Content/Sidebar3', [[300,250], ['fluid']], 'sidebar3').addService(googletag.pubads());
+googletag.defineSlot('/62727623/financiarulro/Content/Sidebar4', [[300,250], ['fluid']], 'sidebar4').addService(googletag.pubads());
+googletag.defineSlot('/62727623/financiarulro/Content/Footer', [[970,250],[300,250],['fluid']], 'footer').defineSizeMapping(__dfp_mappingBillboard).addService(googletag.pubads());
+
 
 
 googletag.pubads().enableSingleRequest();
