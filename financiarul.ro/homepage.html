@@ -1,0 +1,372 @@
+<head>
+    <script async src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
+    <script async src="https://cdn.jsdelivr.net/gh/zgomotos/dagsales@main/prebidjs/prebid4.25.0.js"></script>
+    <script>
+    
+    var PREBID_TIMEOUT = 1000;
+                var FAILSAFE_TIMEOUT = 3000;
+    
+                var adUnits = [
+                    {
+                        code: 'billboard',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] },
+                                    { minViewPort: [980, 0], sizes: [[970,250],[728,90]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                          
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}}
+                           
+                        ]
+                    },
+                    {
+                        code: 'inread',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] },
+                                    { minViewPort: [980, 0], sizes: [[480,320], [336,280], [300,250]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}}
+    
+                        ]
+                    },
+                    {
+                        code: 'inread2',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] },
+                                    { minViewPort: [980, 0], sizes: [[480,320], [336,280], [300,250]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}}
+    
+                        ]
+                    },
+                    {
+                        code: 'inread3',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] },
+                                    { minViewPort: [980, 0], sizes: [[480,320], [336,280], [300,250]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}}
+    
+                        ]
+                    },
+                    {
+                        code: 'sidebar',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}}
+    
+                        ]
+                    },
+                    {
+                        code: 'sidebar1',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}}
+    
+                        ]
+                    },
+                    {
+                        code: 'sidebar2',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}}
+    
+                        ]
+                    },
+                    {
+                        code: 'sidebar3',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}}
+    
+                        ]
+                    },
+                    {
+                        code: 'sidebar4',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}}
+    
+                        ]
+                    },
+                    {
+                        code: 'sidebar5',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}}
+    
+                        ]
+                    },
+                    ];
+    
+            var customPriceGranularity = {
+                'buckets': [
+                    {'precision': 2,'min': 0,'max': 3,'increment': 0.01},
+                    {'precision': 2,'min': 3,'max': 8,'increment': 0.05},
+                    {'precision': 2,'min': 8,'max': 50,'increment': 0.5}
+                ]
+            };
+    
+            var googletag = googletag || {};
+                googletag.cmd = googletag.cmd || [];
+                googletag.cmd.push(function() {
+                    googletag.pubads().disableInitialLoad();
+                });
+    
+                var pbjs = pbjs || {};
+                pbjs.que = pbjs.que || [];
+    
+                pbjs.que.push(function() {
+                    pbjs.addAdUnits(adUnits);
+                    pbjs.setConfig({
+                        priceGranularity: customPriceGranularity
+                    });
+                    pbjs.requestBids({
+                        bidsBackHandler: initAdserver,
+                        timeout: PREBID_TIMEOUT
+                    });
+                });
+    
+                function initAdserver() {
+                    if (pbjs.initAdserverSet) return;
+                    pbjs.initAdserverSet = true;
+                    googletag.cmd.push(function() {
+                        pbjs.que.push(function() {
+                            pbjs.setTargetingForGPTAsync();
+                            googletag.pubads().refresh();
+                        });
+                    });
+                }
+                
+                // in case PBJS doesn't load
+                setTimeout(function() {
+                    initAdserver();
+                }, FAILSAFE_TIMEOUT);
+    
+    
+      window.googletag = window.googletag || {cmd: []};
+      googletag.cmd.push(function() {
+    
+    
+    var __dfp_mappingBillboard  = googletag.sizeMapping()
+    .addSize([980,0], [[728, 90], [970, 250],[970, 90]])
+    .addSize([0, 0], ['fluid',[336,280],[300,250]])
+    .build();
+    
+    var __dfp_mappingInread  = googletag.sizeMapping()
+    .addSize([980,0], ['fluid',[480,320], [336,280], [300,250], [375, 313]])
+    .addSize([0, 0], ['fluid', [336,280], [300,250]])
+    .build();
+    
+    
+    googletag.defineSlot('/62727623/financiarulro/HP/Billboard', [[970,250],[300,250],['fluid']], 'billboard').defineSizeMapping(__dfp_mappingBillboard).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/HP/Inread', [[300,250],['fluid']], 'inread').defineSizeMapping(__dfp_mappingInread).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/HP/Inread1', [[300,250],['fluid']], 'inread1').defineSizeMapping(__dfp_mappingInread).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/HP/Inread2', [[300,250],['fluid']], 'inread2').defineSizeMapping(__dfp_mappingInread).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/HP/Inread3', [[300,250],[300,600], ['fluid']], 'inread3').defineSizeMapping(__dfp_mappingInread).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Sidebar', [[300,250],[300,600], ['fluid']], 'sidebar').defineSizeMapping(__dfp_mappingRelated).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Sidebar1', [[300,250],[300,600], ['fluid']], 'sidebar1').addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Sidebar2', [[300,250]], ['fluid']], 'sidebar2').addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Sidebar3', [[300,250], ['fluid']], 'sidebar3').addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Sidebar4', [[300,250],[300,600], ['fluid']], 'sidebar4').addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Sidebar5', [[300,250], ['fluid']], 'sidebar5').addService(googletag.pubads());
+    
+    
+    
+    googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.pubads().setCentering(true);
+        googletag.enableServices();
+    
+    });
+    </script>
+    <!-- End GPT Tag -->
+    </head>
+    
+    
+    <h2>Billboard</h2>
+    <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
+    <div id='billboard'>
+        <script>
+          googletag.cmd.push(function() { googletag.display('billboard'); });
+        </script>
+      </div>
+      <!-- End AdSlot 1 -->
+    
+      <h2>Inread</h2>
+    <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
+    <div id='inread'>
+        <script>
+          googletag.cmd.push(function() { googletag.display('inread'); });
+        </script>
+      </div>
+      <!-- End AdSlot 1 -->
+    
+      <h2>inread1</h2>
+      <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
+      <div id='inread1'>
+          <script>
+            googletag.cmd.push(function() { googletag.display('inread1'); });
+          </script>
+        </div>
+        <!-- End AdSlot 1 -->
+    
+    
+      
+      <h2>inread2</h2>
+    <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
+    <div id='inread2'>
+        <script>
+          googletag.cmd.push(function() { googletag.display('inread2'); });
+        </script>
+      </div>
+      <!-- End AdSlot 1 -->
+    
+      <h2>inread3 </h2>
+      <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
+      <div id='inread3'>
+          <script>
+            googletag.cmd.push(function() { googletag.display('inread3'); });
+          </script>
+        </div>
+        <!-- End AdSlot 1 -->  
+    
+        
+      <h2>sidebar</h2>
+      <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
+      <div id='sidebar'>
+          <script>
+            googletag.cmd.push(function() { googletag.display('sidebar'); });
+          </script>
+        </div>
+        <!-- End AdSlot 1 -->  
+    
+    
+        <h2>sidebar1 </h2>
+        <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
+        <div id='sidebar1'>
+            <script>
+              googletag.cmd.push(function() { googletag.display('sidebar1'); });
+            </script>
+          </div>
+          <!-- End AdSlot 1 -->  
+      
+    
+    
+          <h2>sidebar 2 </h2>
+          <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
+          <div id='sidebar2'>
+              <script>
+                googletag.cmd.push(function() { googletag.display('sidebar2'); });
+              </script>
+            </div>
+            <!-- End AdSlot 1 -->  
+
+            <h2>sidebar 3 </h2>
+            <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
+            <div id='sidebar3'>
+                <script>
+                  googletag.cmd.push(function() { googletag.display('sidebar3'); });
+                </script>
+              </div>
+              <!-- End AdSlot 1 --> 
+
+              <h2>sidebar 4 </h2>
+              <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
+              <div id='sidebar4'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('sidebar4'); });
+                  </script>
+                </div>
+                <!-- End AdSlot 1 -->  
+
+
+                
+              <h2>sidebar 5 </h2>
+              <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
+              <div id='sidebar5'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('sidebar5'); });
+                  </script>
+                </div>
+                <!-- End AdSlot 1 -->  
+        
+        
+    </body>
+      <!-- asta nu ar trebui sa ajunga live pe site :) -->
+    
+    <img src="https://api.netlify.com/api/v1/badges/b9a859e0-8a92-475f-acd7-661cbdc83cd3/deploy-status">
