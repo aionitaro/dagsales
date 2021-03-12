@@ -1,444 +1,444 @@
 <head>
-<script async src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
-<script async src="https://cdn.jsdelivr.net/gh/zgomotos/dagsales@main/prebidjs/prebid4.25.0.js"></script>
-<script>
-
-var PREBID_TIMEOUT = 1000;
-            var FAILSAFE_TIMEOUT = 3000;
-
-            var adUnits = [
-                {
-                    code: 'billboard',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250]] },
-                                { minViewPort: [980, 0], sizes: [[970,250],[728,90]] }
-                            ]
-                        }
+    <script async src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
+    <script async src="https://cdn.jsdelivr.net/gh/zgomotos/dagsales@main/prebidjs/prebid4.25.0.js"></script>
+    <script>
+    
+    var PREBID_TIMEOUT = 1000;
+                var FAILSAFE_TIMEOUT = 3000;
+    
+                var adUnits = [
+                    {
+                        code: 'billboard',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] },
+                                    { minViewPort: [980, 0], sizes: [[970,250],[728,90]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                          
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}}
+                           
+                        ]
                     },
-                    bids: [
-                      
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}}
+                    {
+                        code: 'inread',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250], [336, 280]] },
+                                ]
+                            }
+                        },
+                        bids: [
+                
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}}
+    
+                        ]
+                    },
+    
+                    {
+                        code: 'inread1',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] },
+                                ]
+                            }
+                        },
+                        bids: [
+                           
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}},
                        
-                    ]
-                },
-                {
-                    code: 'inread',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250], [336, 280]] },
-                            ]
-                        }
+    
+                        ]
                     },
-                    bids: [
-            
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}}
-
-                    ]
-                },
-
-                {
-                    code: 'inread1',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250]] },
-                            ]
-                        }
-                    },
-                    bids: [
-                       
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}},
-                   
-
-                    ]
-                },
-              
-                {
-                    code: 'finart',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250],[300, 600]] },
-                                { minViewPort: [980, 0], sizes: [[580, 400]] }
-                            ]
-                        }
-                    },
-                    bids: [
-                     
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}},
-                      
-
-                    ]
-                },   
-                {
-                    code: 'related',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250]] },
-                                { minViewPort: [980, 0], sizes: [[580, 400]] }
-                            ]
-                        }
-                    },
-                    bids: [
-                       
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}},
-                    
-
-                    ]
-                },  
-                {
-                    code: 'related1',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250],[300, 600]] },
-                                { minViewPort: [980, 0], sizes: [[580, 400]] }
-                            ]
-                        }
-                    },
-                    bids: [
                   
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}},
-
-                    ]
-                } ,
-                {
-                    code: 'sidebar',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250]] }
-                            ]
-                        }
-                    },
-                    bids: [
+                    {
+                        code: 'finart',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250],[300, 600]] },
+                                    { minViewPort: [980, 0], sizes: [[580, 400]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                         
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}},
+                          
+    
+                        ]
+                    },   
+                    {
+                        code: 'related',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] },
+                                    { minViewPort: [980, 0], sizes: [[580, 400]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                           
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}},
                         
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}},
-                       
-
-                    ]
-                },
-                {
-                    code: 'sidebar1',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
-                            ]
-                        }
+    
+                        ]
+                    },  
+                    {
+                        code: 'related1',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250],[300, 600]] },
+                                    { minViewPort: [980, 0], sizes: [[580, 400]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                      
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}},
+    
+                        ]
+                    } ,
+                    {
+                        code: 'sidebar',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                            
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}},
+                           
+    
+                        ]
                     },
-                    bids: [
-                        
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}},
-                       
-
-                    ]
-                },
-                {
-                    code: 'sidebar2',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
-                            ]
-                        }
+                    {
+                        code: 'sidebar1',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                            
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}},
+                           
+    
+                        ]
                     },
-                    bids: [
-                        
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}},
-                       
-
-                    ]
-                },
-                {
-                    code: 'sidebar3',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
-                            ]
-                        }
+                    {
+                        code: 'sidebar2',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                            
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}},
+                           
+    
+                        ]
                     },
-                    bids: [
-                        
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}},
-                       
-
-                    ]
-                },
-                {
-                    code: 'sidebar2',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250]] }
-                            ]
-                        }
+                    {
+                        code: 'sidebar3',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                            
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}},
+                           
+    
+                        ]
                     },
-                    bids: [
-                        
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}},
-                       
-
-                    ]
-                },
-                {
-                    code: 'sidebar3',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250]] }
-                            ]
-                        }
+                    {
+                        code: 'sidebar2',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                            
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}},
+                           
+    
+                        ]
                     },
-                    bids: [
-                        
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}},
-                       
-
-                    ]
-                },
-                {
-                    code: 'sidebar4',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
-                            ]
-                        }
+                    {
+                        code: 'sidebar3',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                            
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}},
+                           
+    
+                        ]
                     },
-                    bids: [
-                        
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}},
-                       
-
-                    ]
-                }
-                {
-                    code: 'footer',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
-                            ]
-                        }
-                    },
-                    bids: [
-                        
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}},
-                       
-
-                    ]
-                }
-                ];
-
-        var customPriceGranularity = {
-			'buckets': [
-				{'precision': 2,'min': 0,'max': 3,'increment': 0.01},
-				{'precision': 2,'min': 3,'max': 8,'increment': 0.05},
-				{'precision': 2,'min': 8,'max': 50,'increment': 0.5}
-			]
-        };
-
-        var googletag = googletag || {};
-            googletag.cmd = googletag.cmd || [];
-            googletag.cmd.push(function() {
-                googletag.pubads().disableInitialLoad();
-            });
-
-            var pbjs = pbjs || {};
-            pbjs.que = pbjs.que || [];
-
-            pbjs.que.push(function() {
-                pbjs.addAdUnits(adUnits);
-                pbjs.setConfig({
-                	priceGranularity: customPriceGranularity
-                });
-                pbjs.requestBids({
-                    bidsBackHandler: initAdserver,
-                    timeout: PREBID_TIMEOUT
-                });
-            });
-
-            function initAdserver() {
-                if (pbjs.initAdserverSet) return;
-                pbjs.initAdserverSet = true;
+                    {
+                        code: 'sidebar4',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                            
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}},
+                           
+    
+                        ]
+                    }
+                    {
+                        code: 'footer',
+                        mediaTypes: {
+                            banner: {
+                                sizeConfig: [
+                                    { minViewPort: [0, 0], sizes: [[300, 250],[300,600]] }
+                                ]
+                            }
+                        },
+                        bids: [
+                            
+                            {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                            {"bidder":"criteo","params":{"networkId":8796}},
+                           
+    
+                        ]
+                    }
+                    ];
+    
+            var customPriceGranularity = {
+                'buckets': [
+                    {'precision': 2,'min': 0,'max': 3,'increment': 0.01},
+                    {'precision': 2,'min': 3,'max': 8,'increment': 0.05},
+                    {'precision': 2,'min': 8,'max': 50,'increment': 0.5}
+                ]
+            };
+    
+            var googletag = googletag || {};
+                googletag.cmd = googletag.cmd || [];
                 googletag.cmd.push(function() {
-                    pbjs.que.push(function() {
-                        pbjs.setTargetingForGPTAsync();
-                        googletag.pubads().refresh();
+                    googletag.pubads().disableInitialLoad();
+                });
+    
+                var pbjs = pbjs || {};
+                pbjs.que = pbjs.que || [];
+    
+                pbjs.que.push(function() {
+                    pbjs.addAdUnits(adUnits);
+                    pbjs.setConfig({
+                        priceGranularity: customPriceGranularity
+                    });
+                    pbjs.requestBids({
+                        bidsBackHandler: initAdserver,
+                        timeout: PREBID_TIMEOUT
                     });
                 });
-            }
-            
-            // in case PBJS doesn't load
-            setTimeout(function() {
-                initAdserver();
-            }, FAILSAFE_TIMEOUT);
-
-
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-
-
-var __dfp_mappingBillboard  = googletag.sizeMapping()
-.addSize([980,0], [[728, 90], [970, 250],[970, 90]])
-.addSize([0, 0], ['fluid',[336,280],[300,250]])
-.build();
-
-var __dfp_mappingRectangle  = googletag.sizeMapping()
-.addSize([980,0], [[336,280], [300,250], [375, 313]])
-.addSize([0, 0], ['fluid', [336,280], [300,250]])
-.build();
-
-var __dfp_mappingRelated  = googletag.sizeMapping()
-.addSize([980,0], ['fluid', [580, 400]])
-.addSize([0, 0], ['fluid', [300,250], [336,280]])
-.build();
-
-var __dfp_mappingSidebar  = googletag.sizeMapping()
-.addSize([980,0], [[336,280], [300,250], [375, 313]])
-.addSize([0, 0], ['fluid', [336,280], [300,250]])
-.build();
-
-googletag.defineSlot('/62727623/financiarulro/Content/Billboard', [[970,250],[300,250],['fluid']], 'billboard').defineSizeMapping(__dfp_mappingBillboard).addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Inread', [[300,250],['fluid']], 'inread').defineSizeMapping(__dfp_mappingRectangle).addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Inread1', [[300,250],['fluid']], 'inread1').defineSizeMapping(__dfp_mappingRectangle).addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Finart', [[300,250],['fluid']], 'finart').defineSizeMapping(__dfp_mappingRelated).addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Related', [[300,250],[300,600], ['fluid']], 'related').defineSizeMapping(__dfp_mappingRelated).addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Related1', [[300,250],[300,600], ['fluid']], 'related1').defineSizeMapping(__dfp_mappingRelated).addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Sidebar', [[300,250], ['fluid']], 'sidebar').addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Sidebar1', [[300,250],[300,600], ['fluid']], 'sidebar1').addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Sidebar2', [[300,250], ['fluid']], 'sidebar2').addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Sidebar3', [[300,250], ['fluid']], 'sidebar3').addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Sidebar4', [[300,250], ['fluid']], 'sidebar4').addService(googletag.pubads());
-googletag.defineSlot('/62727623/financiarulro/Content/Footer', [[970,250],[300,250],['fluid']], 'footer').defineSizeMapping(__dfp_mappingBillboard).addService(googletag.pubads());
-
-
-
-googletag.pubads().enableSingleRequest();
-    googletag.pubads().collapseEmptyDivs();
-    googletag.pubads().setCentering(true);
-    googletag.enableServices();
-
-});
-</script>
-</head>
-
-
-<h2>Billboard</h2>
-<div id='billboard'>
-    <script>
-      googletag.cmd.push(function() { googletag.display('billboard'); });
-    </script>
-  </div>
-
-  <h2>Inread</h2>
-<div id='inread'>
-    <script>
-      googletag.cmd.push(function() { googletag.display('inread'); });
-    </script>
-  </div>
-
-  <h2>Inread1</h2>
-  <div id='inread1'>
-      <script>
-        googletag.cmd.push(function() { googletag.display('inread1'); });
-      </script>
-    </div>
-
-
-  
-  <h2>Finart</h2>
-<div id='finart'>
-    <script>
-      googletag.cmd.push(function() { googletag.display('finart'); });
-    </script>
-  </div>
-
-  <h2>Related </h2>
-  <div id='related'>
-      <script>
-        googletag.cmd.push(function() { googletag.display('related'); });
-      </script>
-    </div>
-
     
-  <h2>Related 1</h2>
-  <div id='related1'>
-      <script>
-        googletag.cmd.push(function() { googletag.display('related1'); });
-      </script>
-    </div>
-
-
-    <h2>Sidebar</h2>
-    <div id='sidebar'>
+                function initAdserver() {
+                    if (pbjs.initAdserverSet) return;
+                    pbjs.initAdserverSet = true;
+                    googletag.cmd.push(function() {
+                        pbjs.que.push(function() {
+                            pbjs.setTargetingForGPTAsync();
+                            googletag.pubads().refresh();
+                        });
+                    });
+                }
+                
+                // in case PBJS doesn't load
+                setTimeout(function() {
+                    initAdserver();
+                }, FAILSAFE_TIMEOUT);
+    
+    
+      window.googletag = window.googletag || {cmd: []};
+      googletag.cmd.push(function() {
+    
+    
+    var __dfp_mappingBillboard  = googletag.sizeMapping()
+    .addSize([980,0], [[728, 90], [970, 250],[970, 90]])
+    .addSize([0, 0], ['fluid',[336,280],[300,250]])
+    .build();
+    
+    var __dfp_mappingRectangle  = googletag.sizeMapping()
+    .addSize([980,0], [[336,280], [300,250], [375, 313]])
+    .addSize([0, 0], ['fluid', [336,280], [300,250]])
+    .build();
+    
+    var __dfp_mappingRelated  = googletag.sizeMapping()
+    .addSize([980,0], ['fluid', [580, 400]])
+    .addSize([0, 0], ['fluid', [300,250], [336,280]])
+    .build();
+    
+    var __dfp_mappingSidebar  = googletag.sizeMapping()
+    .addSize([980,0], [[336,280], [300,250], [375, 313]])
+    .addSize([0, 0], ['fluid', [336,280], [300,250]])
+    .build();
+    
+    googletag.defineSlot('/62727623/financiarulro/Content/Billboard', [[970,250],[300,250],['fluid']], 'billboard').defineSizeMapping(__dfp_mappingBillboard).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Inread', [[300,250],['fluid']], 'inread').defineSizeMapping(__dfp_mappingRectangle).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Inread1', [[300,250],['fluid']], 'inread1').defineSizeMapping(__dfp_mappingRectangle).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Finart', [[300,250],['fluid']], 'finart').defineSizeMapping(__dfp_mappingRelated).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Related', [[300,250],[300,600], ['fluid']], 'related').defineSizeMapping(__dfp_mappingRelated).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Related1', [[300,250],[300,600], ['fluid']], 'related1').defineSizeMapping(__dfp_mappingRelated).addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Sidebar', [[300,250], ['fluid']], 'sidebar').addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Sidebar1', [[300,250],[300,600], ['fluid']], 'sidebar1').addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Sidebar2', [[300,250], ['fluid']], 'sidebar2').addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Sidebar3', [[300,250], ['fluid']], 'sidebar3').addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Sidebar4', [[300,250], ['fluid']], 'sidebar4').addService(googletag.pubads());
+    googletag.defineSlot('/62727623/financiarulro/Content/Footer', [[970,250],[300,250],['fluid']], 'footer').defineSizeMapping(__dfp_mappingBillboard).addService(googletag.pubads());
+    
+    
+    
+    googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.pubads().setCentering(true);
+        googletag.enableServices();
+    
+    });
+    </script>
+    </head>
+    
+    
+    <h2>Billboard</h2>
+    <div id='billboard'>
         <script>
-          googletag.cmd.push(function() { googletag.display('sidebar'); });
+          googletag.cmd.push(function() { googletag.display('billboard'); });
         </script>
       </div>
-  
-
-
-      <h2>Sidebar 1</h2>
-      <div id='sidebar1'>
+    
+      <h2>Inread</h2>
+    <div id='inread'>
+        <script>
+          googletag.cmd.push(function() { googletag.display('inread'); });
+        </script>
+      </div>
+    
+      <h2>Inread1</h2>
+      <div id='inread1'>
           <script>
-            googletag.cmd.push(function() { googletag.display('sidebar1'); });
+            googletag.cmd.push(function() { googletag.display('inread1'); });
           </script>
         </div>
-
-
-        <h2>Sidebar 2</h2>
-        <div id='sidebar2'>
+    
+    
+      
+      <h2>Finart</h2>
+    <div id='finart'>
+        <script>
+          googletag.cmd.push(function() { googletag.display('finart'); });
+        </script>
+      </div>
+    
+      <h2>Related </h2>
+      <div id='related'>
+          <script>
+            googletag.cmd.push(function() { googletag.display('related'); });
+          </script>
+        </div>
+    
+        
+      <h2>Related 1</h2>
+      <div id='related1'>
+          <script>
+            googletag.cmd.push(function() { googletag.display('related1'); });
+          </script>
+        </div>
+    
+    
+        <h2>Sidebar</h2>
+        <div id='sidebar'>
             <script>
-              googletag.cmd.push(function() { googletag.display('sidebar2'); });
+              googletag.cmd.push(function() { googletag.display('sidebar'); });
             </script>
           </div>
-
-          <h2>Sidebar 3</h2>
-        <div id='sidebar3'>
-            <script>
-              googletag.cmd.push(function() { googletag.display('sidebar3'); });
-            </script>
-          </div>
-
-          <h2>Sidebar 4</h2>
-          <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
-          <div id='sidebar4'>
-              <script>
-                googletag.cmd.push(function() { googletag.display('sidebar4'); });
-              </script>
-            </div>
-
-            <h2>Footer</h2>
-            <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
-            <div id='Footer'>
-                <script>
-                  googletag.cmd.push(function() { googletag.display('footer'); });
-                </script>
-              </div>           
       
     
-</body>
-  <!-- asta nu ar trebui sa ajunga live pe site :) -->
-
-<img src="https://api.netlify.com/api/v1/badges/b9a859e0-8a92-475f-acd7-661cbdc83cd3/deploy-status">
+    
+          <h2>Sidebar 1</h2>
+          <div id='sidebar1'>
+              <script>
+                googletag.cmd.push(function() { googletag.display('sidebar1'); });
+              </script>
+            </div>
+    
+    
+            <h2>Sidebar 2</h2>
+            <div id='sidebar2'>
+                <script>
+                  googletag.cmd.push(function() { googletag.display('sidebar2'); });
+                </script>
+              </div>
+    
+              <h2>Sidebar 3</h2>
+            <div id='sidebar3'>
+                <script>
+                  googletag.cmd.push(function() { googletag.display('sidebar3'); });
+                </script>
+              </div>
+    
+              <h2>Sidebar 4</h2>
+              <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
+              <div id='sidebar4'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('sidebar4'); });
+                  </script>
+                </div>
+    
+                <h2>Footer</h2>
+                <!-- GPT AdSlot 1 for Ad unit 'Catine.ro/Content/Billboard' ### Size: [[970,250],[300,250],'fluid'] -->
+                <div id='Footer'>
+                    <script>
+                      googletag.cmd.push(function() { googletag.display('footer'); });
+                    </script>
+                  </div>           
+          
+        
+    </body>
+      <!-- asta nu ar trebui sa ajunga live pe site :) -->
+    
+    <img src="https://api.netlify.com/api/v1/badges/b9a859e0-8a92-475f-acd7-661cbdc83cd3/deploy-status">
