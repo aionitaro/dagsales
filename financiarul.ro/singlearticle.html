@@ -29,7 +29,7 @@ var PREBID_TIMEOUT = 1000;
                     mediaTypes: {
                         banner: {
                             sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250]] },
+                                { minViewPort: [0, 0], sizes: [[300, 250], [336, 280]] },
                             ]
                         }
                     },
@@ -42,92 +42,126 @@ var PREBID_TIMEOUT = 1000;
                 },
 
                 {
-                    code: 'rectangle',
-                    mediaTypes: {
-                        banner: {
-                            sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250]] },
-                            ]
-                        }
-                    },
-                    bids: [
-                        {bidder: 'adform', params: { mid: 944199} },
-                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
-                        {"bidder":"criteo","params":{"networkId":8796}},
-                        {bidder: 'smartadserver', params:{domain:'https://prg.smartadserver.com', siteId:'390932', pageId:'1341989', formatId:'94890'}}
-
-                    ]
-                },
-                {
                     code: 'billboard1',
                     mediaTypes: {
                         banner: {
                             sizeConfig: [
                                 { minViewPort: [0, 0], sizes: [[300, 250]] },
-                                { minViewPort: [980, 0], sizes: [[970,250],[728,90]] }
                             ]
                         }
                     },
                     bids: [
-                        {bidder: 'adform', params: { mid: 944199} },
-                        {bidder: 'adform', params: { mid: 944198} },
+                       
                         {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
                         {"bidder":"criteo","params":{"networkId":8796}},
-                        {bidder: 'smartadserver', params:{domain:'https://prg.smartadserver.com', siteId:'390932', pageId:'1341989', formatId:'94797'}}
+                   
 
                     ]
                 },
                 {
-                    code: 'rectangle1',
+                    code: 'billboard2',
                     mediaTypes: {
                         banner: {
                             sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250],[300, 600]] },
+                                { minViewPort: [0, 0], sizes: [[300, 250]] }
                             ]
                         }
                     },
                     bids: [
-                        {bidder: 'adform', params: { mid: 944199} },
+                        
                         {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
                         {"bidder":"criteo","params":{"networkId":8796}},
-                        {bidder: 'smartadserver', params:{domain:'https://prg.smartadserver.com', siteId:'390932', pageId:'1341989', formatId:'94890'}}
+                       
 
                     ]
-                },   
+                },
                 {
                     code: 'finart',
                     mediaTypes: {
                         banner: {
                             sizeConfig: [
-                                { minViewPort: [0, 0], sizes: [[300, 250]] },
+                                { minViewPort: [0, 0], sizes: [[300, 250],[300, 600]] },
+                                { minViewPort: [980, 0], sizes: [[580, 400]] }
                             ]
                         }
                     },
                     bids: [
-                        {bidder: 'adform', params: { mid: 944199} },
+                     
                         {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
                         {"bidder":"criteo","params":{"networkId":8796}},
-                        {bidder: 'smartadserver', params:{domain:'https://prg.smartadserver.com', siteId:'390932', pageId:'1341989', formatId:'94890'}}
+                      
+
+                    ]
+                },   
+                {
+                    code: 'related',
+                    mediaTypes: {
+                        banner: {
+                            sizeConfig: [
+                                { minViewPort: [0, 0], sizes: [[300, 250]] },
+                                { minViewPort: [980, 0], sizes: [[580, 400]] }
+                            ]
+                        }
+                    },
+                    bids: [
+                       
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                        {"bidder":"criteo","params":{"networkId":8796}},
+                    
 
                     ]
                 },  
                 {
-                    code: 'rectangle2',
+                    code: 'related1',
                     mediaTypes: {
                         banner: {
                             sizeConfig: [
                                 { minViewPort: [0, 0], sizes: [[300, 250],[300, 600]] },
+                                { minViewPort: [980, 0], sizes: [[580, 400]] }
                             ]
                         }
                     },
                     bids: [
-                        {bidder: 'adform', params: { mid: 944199} },
+                  
                         {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
                         {"bidder":"criteo","params":{"networkId":8796}},
-                        {bidder: 'smartadserver', params:{domain:'https://prg.smartadserver.com', siteId:'390932', pageId:'1341989', formatId:'94890'}}
 
                     ]
-                }  
+                } ,
+                {
+                    code: 'sidebar',
+                    mediaTypes: {
+                        banner: {
+                            sizeConfig: [
+                                { minViewPort: [0, 0], sizes: [[300, 250]] }
+                            ]
+                        }
+                    },
+                    bids: [
+                        
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                        {"bidder":"criteo","params":{"networkId":8796}},
+                       
+
+                    ]
+                },
+                {
+                    code: 'sidebar1',
+                    mediaTypes: {
+                        banner: {
+                            sizeConfig: [
+                                { minViewPort: [0, 0], sizes: [[300, 250]] }
+                            ]
+                        }
+                    },
+                    bids: [
+                        
+                        {bidder: "rtbhouse",params: {region: 'prebid-eu',publisherId: 'FxXwYu16CSnfjgxF0NQH'}},
+                        {"bidder":"criteo","params":{"networkId":8796}},
+                       
+
+                    ]
+                }
                 ];
 
         var customPriceGranularity = {
@@ -192,6 +226,11 @@ var __dfp_mappingRectangle  = googletag.sizeMapping()
 var __dfp_mappingRelated  = googletag.sizeMapping()
 .addSize([980,0], ['fluid', [580, 400]])
 .addSize([0, 0], ['fluid', [300,250], [336,280]])
+.build();
+
+var __dfp_mappingSidebar  = googletag.sizeMapping()
+.addSize([980,0], [[336,280], [300,250], [375, 313]])
+.addSize([0, 0], ['fluid', [336,280], [300,250]])
 .build();
 
 googletag.defineSlot('/62727623/financiarulro/Content/Billboard', [[970,250],[300,250],['fluid']], 'billboard').defineSizeMapping(__dfp_mappingBillboard).addService(googletag.pubads());
