@@ -242,3 +242,5 @@ var adUnits = [
         ]
     }
     ];
+
+    export {adUnits};
