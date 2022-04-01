@@ -1,0 +1,54 @@
+head zutv: 
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/62727623/zutvro/content/sticky', [[300, 100], [300, 50], [300, 75]], 'div-gpt-ad-1648813485086-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+BODY ZUTV
+
+<!-- /62727623/zutvro/content/sticky -->
+<div id='div-gpt-ad-1648813485086-0' style='min-width: 300px; min-height: 50px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1648813485086-0'); });
+  </script>
+</div>
+
+
+
+
+HEAD TVHAPPY
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/62727623/tvhappy/content/stiky', [[300, 75], [300, 100], [300, 50]], 'div-gpt-ad-1648813843723-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+
+BODY TVHAPPY
+
+
+<!-- /62727623/tvhappy/content/stiky -->
+<div id='div-gpt-ad-1648813843723-0' style='min-width: 300px; min-height: 50px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1648813843723-0'); });
+  </script>
+</div>
+
+
+
+
+
+
+
+
